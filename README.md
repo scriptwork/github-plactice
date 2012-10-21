@@ -3,6 +3,8 @@ github-plactice
 
 GitHub練習中のメモです。
 
+Gitクライアントは Emacs + Magit で試行錯誤中。
+
 
 SSH鍵の生成
 ---
@@ -12,8 +14,8 @@ SSH鍵の生成
 	Generating public/private rsa key pair.
 	Enter file in which to save the key (/home/user/.ssh/id_rsa):
 	Created directory '/home/user/.ssh'.
-	Enter passphrase (empty for no passphrase): 
-	Enter same passphrase again: 
+	Enter passphrase (empty for no passphrase): **********
+	Enter same passphrase again: **********
 	
 	Your identification has been saved in /home/user/.ssh/id_rsa.
 	Your public key has been saved in /home/user/.ssh/id_rsa.pub.
@@ -32,3 +34,15 @@ SSH鍵の生成
 	|       .o=.  .oo.|
 	+-----------------+
 
+
+.gitconfig 設定
+---
+
+	git config --global user.name "ユーザー名"
+	git config --global user.email メールアドレス
+
+
+練習用リポジトリのクローン
+---
+
+	git clone git://github.com/scriptwork/github-plactice.git
